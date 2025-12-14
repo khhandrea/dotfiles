@@ -1,4 +1,4 @@
-# MacOS: ~/.config/starship.toml
+# ~/.config/starship.toml
 format = """
 $conda\
 $username\
@@ -30,6 +30,9 @@ truncation_symbol = '.../'
 truncate_to_repo = false
 style = 'bold fg:#3ecc71'
 format = ':[$path]($style) '
+
+[python]
+format = "via [$symbol$virtualenv]($style)"
 
 [fill]
 symbol = ' '
