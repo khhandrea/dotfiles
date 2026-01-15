@@ -43,3 +43,4 @@ format = 'took [$duration]($style) '
 
 [character]
 success_symbol = '[\$](bold fg:#2ecc71)'
+error_symbol = '[\$](bold red)'
