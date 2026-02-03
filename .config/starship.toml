@@ -23,7 +23,7 @@ format = '[$ssh_symbol]($style)'
 
 [username]
 style_user = "bold fg:green"
-format = '[$user]($style)'
+format = '[$user]($style):'
 
 [directory]
 truncation_length = 8
