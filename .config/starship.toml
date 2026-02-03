@@ -15,32 +15,23 @@ add_newline = true
 
 [conda]
 ignore_base = false
-style = 'white'
-symbol = "\ue73c  "
-format = '[\($symbol$environment\)]($style) '
+style = "white"
+format = "[\($environment\)]($style) "
 
 [username]
-show_always = true
-style_user = 'bold fg:#3ecc71'
+style_user = "bold fg:green"
 format = '[$user]($style)'
 
 [directory]
 truncation_length = 8
-truncation_symbol = '.../'
+truncation_symbol = ".../"
 truncate_to_repo = false
-style = 'bold fg:#3ecc71'
-format = ':[$path]($style) '
-
-[python]
-format = "via [$symbol$virtualenv]($style)"
+style = "bold fg:green"
+format = ":[$path]($style) "
 
 [fill]
-symbol = ' '
+symbol = " "
 
 [cmd_duration]
 style = "yellow"
-format = 'took [$duration]($style) '
-
-[character]
-success_symbol = '[\$](bold fg:#2ecc71)'
-error_symbol = '[\$](bold red)'
+format = "took [$duration]($style) "
