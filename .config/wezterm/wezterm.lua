@@ -6,7 +6,8 @@ local config = wezterm.config_builder()
 -- Set default shell
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   -- Windows
-  config.default_prog = {"powershell.exe"}
+  -- config.default_prog = {"powershell.exe"}
+  config.default_prog = {"wsl.exe", "-d", "Ubuntu-22.04", "--cd", "~"}
 elseif wezterm.target_triple:find("darwin") then
   -- MacOS
   config.default_prog = {"/bin/zsh", "-l"}
@@ -28,10 +29,14 @@ config.window_padding = {
 }
 
 -- Theme
-config.color_scheme = "Everforest Dark Hard (Gogh)"
+config.color_scheme = "Andromeda"
+config.colors = {
+  foreground = "e8e8e0",
+  background = "2b2e28"
+}
 
-config.font = wezterm.font("D2Coding Nerd")
-config.font_size = 20
+config.font = wezterm.font("D2Coding")
+config.font_size = 14
 
 config.default_cursor_style = "BlinkingBar"
 
