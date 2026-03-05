@@ -17,7 +17,6 @@ else
 end
 
 -- Windows
-config.window_background_opacity = 0.95
 config.macos_window_background_blur = 10
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
