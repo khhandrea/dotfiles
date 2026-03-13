@@ -25,7 +25,7 @@ format = '[$user]($style)'
 
 [hostname]
 style = "bold fg:green"
-format = '[@$hostname]($style)'
+format = '@[$hostname]($style)'
 
 [directory]
 truncation_length = 8
