@@ -19,6 +19,7 @@ style = "white"
 format = '[\($environment\)]($style) '
 
 [username]
+show_always = true
 style_user = "bold fg:green"
 format = '[$user]($style)'
 
