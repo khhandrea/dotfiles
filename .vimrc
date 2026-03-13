@@ -9,9 +9,6 @@ au BufReadPost *
 \ exe "norm g`\"" |
 \ endif
 
-" Keybindings
-inoremap jj <ESC>
-
 " Tab
 set autoindent
 set ts=4
