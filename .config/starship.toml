@@ -4,6 +4,7 @@ $conda\
 $username\
 $hostname\
 $directory\
+$container\
 $git_branch\
 $git_status\
 $fill\
@@ -33,6 +34,10 @@ truncation_symbol = ".../"
 truncate_to_repo = false
 style = "bold fg:green"
 format = ":[$path]($style) "
+
+[container]
+style = "bold blue"
+format = '[$symbol]($style) '
 
 [fill]
 symbol = " "
