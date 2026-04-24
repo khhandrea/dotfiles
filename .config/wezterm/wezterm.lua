@@ -6,8 +6,8 @@ local config = wezterm.config_builder()
 -- Set default shell
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   -- Windows
-  -- config.default_prog = {"powershell.exe"}
-  config.default_prog = {"wsl.exe", "-d", "Ubuntu-22.04", "--cd", "~"}
+  config.default_prog = {"powershell.exe"}
+  -- config.default_prog = {"wsl.exe", "-d", "Ubuntu-22.04", "--cd", "~"}
 elseif wezterm.target_triple:find("darwin") then
   -- MacOS
   config.default_prog = {"/bin/zsh", "-l"}
