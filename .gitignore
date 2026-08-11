@@ -1,2 +1,12 @@
 # MacOS
 .DS_Store
+
+# Claude Code local state (credentials, history, cache, sessions, etc.)
+# Only shared/common config files are tracked (see exceptions below).
+.claude/*
+!.claude/settings.json
+!.claude/CLAUDE.md
+!.claude/commands/
+!.claude/agents/
+!.claude/skills/
+!.claude/output-styles/
