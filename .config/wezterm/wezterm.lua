@@ -4,7 +4,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- Set default shell
-if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+if wezterm.target_triple:find("windows") then
   -- Windows
   config.default_prog = {"powershell.exe"}
   -- config.default_prog = {"wsl.exe", "-d", "Ubuntu-22.04", "--cd", "~"}
